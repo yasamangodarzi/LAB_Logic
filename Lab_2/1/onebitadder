@@ -1,0 +1,40 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    23:14:01 11/22/2021 
+// Design Name: 
+// Module Name:    onebit_adder 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module onebit_adder(
+    input A,
+    input B,
+    input Sel,
+    input Cin,
+    output Sum,
+    output Cout
+    );
+	 wire w1,w2,w3;
+	 
+	    xor #10 (Bnew,B,Sel);
+		 xor #10 (w1,A,Bnew);
+		 xor #10 (Sum,w1,Cin);
+		 
+	    and #5 (w2,A,Bnew);
+		 and #5 (w3,Cin,w1);
+		
+	    or  #5 (Cout,w3,w2);
+  
+endmodule
