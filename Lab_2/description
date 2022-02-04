@@ -1,0 +1,3 @@
+1) This circuit receives two bits A and B and
+Depending on whether the value of Cin is zero or one, it adds or subtracts two bits based on it
+2) 4-bit adder-subtractor circuit
