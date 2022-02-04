@@ -1,0 +1,36 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    13:26:14 11/07/2021 
+// Design Name: 
+// Module Name:    decoder 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module decoder(
+    input I0,
+    input I1,
+    input EN,
+    output D0,
+    output D1,
+    output D2,
+    output D3
+    );
+    
+	assign D0 = (~I0) & (~I1) & EN;
+	assign D1 = (~I0) & (I1) & EN;
+	assign D2 = (I0) & (~I1) & EN;
+	assign D3 = (I0) & (I1) & EN;
+
+endmodule
