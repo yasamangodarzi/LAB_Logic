@@ -1,0 +1,36 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    07:16:23 11/08/2021 
+// Design Name: 
+// Module Name:    Decoder4x16 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module Decoder4x16(
+    input a,
+    input b,
+    input c,
+    input d,
+    input en,
+    output [15:0] f
+    );
+    wire [3:0] g;
+	decoder2x4 o1(a,b,en,g[0],g[1],g[2],g[3]);
+	decoder2x4 o2(c,d,g[0],f[0],f[1],f[2],f[3]);
+	decoder2x4 o3(c,d,g[1],f[4],f[5],f[6],f[7]);
+	decoder2x4 o4(c,d,g[2],f[8],f[9],f[10],f[11] );
+	decoder2x4 o5(c,d,g[3],f[12],f[13],f[14],f[15] );
+
+endmodule
