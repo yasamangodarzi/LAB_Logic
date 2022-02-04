@@ -1,5 +1,0 @@
-
-1) Draw 2-by-4 decoder, 4-to-1 multiplexer and 2-by-4 priority encoder circuits at the gate level and write their descriptions at the gate level in Verlag language.
-2) Design a 16 × 4 decoder using the 4 -to- 2 decoder circuit designed in the previous section.
-3) Using the 16 x 4 decoder designed in the previous section, implement the following function.
-    f(𝑎, 𝑏, 𝑐, 𝑑) = ∏(0, 1, 4,6, 8, 9,10,12,14,15)
