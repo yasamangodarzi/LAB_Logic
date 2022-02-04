@@ -1,0 +1,4 @@
+Implement the following circuit(add image)
+The flip-flops operate with the descending edge of the CLK clock signal.
+Consider the delay of each gate to be 10 nanoseconds. Clock signal frequency period
+Also consider 80 nanoseconds and the clock input delay to the flip-flop output 5 nanoseconds.
