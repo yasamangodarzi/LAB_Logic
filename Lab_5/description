@@ -1,0 +1,12 @@
+Intelligent system design (attached system photo):
+The system is initially in "idle" mode (000 mode.) The user must first activate the Request input,
+Enter the system into "active" mode (mode 001.) Then the system waits for the user to enter a 4-bit password
+And press the Confirm button. If the password is correct, the system enters the mode
+Is "requested" (mode 101) and otherwise, the system goes to telephoto mode (mode 111). If the system
+Enter "Request" mode, wait for the user to enter a 4-bit data and press the Confirm button
+Select to store the information system in the corresponding registers at the active edge of the next clock (110 mode).
+In all these steps, if the user resets the Request input to zero, the system immediately goes into "idle" mode. data
+One must be stored in one register and even data in another register.
+10.3) Draw the system state machine diagram by considering the following figure to implement the system.
+10.4) Based on the designed mode diagram, the system is designed using a finite mode machine (FSM) and with
+Describe the Verilog language. Then simulate your design.
